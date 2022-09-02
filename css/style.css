@@ -6,6 +6,26 @@ p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 14px;
 }
+.subtitulo{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: .1em;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.subtitulo::after  {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000;
+  margin: 8px auto;
+}
+
+
 .btn {
   border: 3px solid #fec63e;
   padding: 10px 30px ;
@@ -21,7 +41,10 @@ p {
   color: #fff;
   border-color: #fff;
 }
-
+.btn.btn-preto:hover{
+  color: #000;
+  border-color: #000;
+}
 
 
 /* Estilo Header */
@@ -31,6 +54,7 @@ p {
   top: 0;
   background-color: #fec63e;
   padding: 15px 0;
+  z-index: 10;
 }
 .header_menu {
   text-align: right;
@@ -96,4 +120,47 @@ text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
   letter-spacing: .1em;
+}
+/* Produtos */
+.produtos {
+  padding: 60px 0 ;
+}
+.produtos_lista li {
+  background-color:#fec63e;
+  text-align: center;
+}
+
+.produtos_lista li h3 {
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+text-transform: uppercase;
+letter-spacing: .1em;
+margin-top: 20px;
+
+}
+.produtos_lista li h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000;
+  margin: 2px auto;
+}
+.produtos_lista li p {
+padding: 10px 20px 20px 20px;
+}
+
+.produtos_lista-icone {
+  padding: 20px;
+  background-color: #000;
+}
+
+.call {
+  padding-top: 40px;
+  clear: both;
+  text-align: center;
+}
+.call p {
+  margin-bottom: 20px;
 }
