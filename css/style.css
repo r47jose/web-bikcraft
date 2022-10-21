@@ -92,8 +92,8 @@ margin-left: 25px;
   letter-spacing: .1em;
   font-size: 14px;
   padding: 10px 0;
-
 }
+
 .header_menu ul li a:hover {
   color: #FFF;
 }
@@ -177,7 +177,10 @@ text-transform: uppercase;
 }
 .produtos_lista li {
   background-color:#fec63e;
-  text-align: center;
+ text-align: center;
+}
+.produtos_lista li img{
+margin: 0 auto;
 }
 
 .produtos_lista li h3 {
